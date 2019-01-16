@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LELocalServer"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = 'A short description of LELocalServer.'
   s.description  = <<-DESC
                   LEE_SS_LIB Http and Socks proxy based on Privoxy and Antinat.
@@ -18,5 +18,4 @@ Pod::Spec.new do |s|
   s.xcconfig = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC'}
   s.public_header_files = 'Source/*.framework/Headers/{.h}'
   s.ios.vendored_frameworks   = 'Source/*.framework'
-  s.dependency 'libsodium', '~>1.0.3' 
 end
